@@ -186,7 +186,7 @@ release:
 		-w /go/src/osmosisd \
 		$(GORELEASER_IMAGE) \
 		release \
-		--clean
+		--clean --snapshot --verbose
 else
 release:
 	@echo "Error: GITHUB_TOKEN is not defined. Please define it before running 'make release'."
